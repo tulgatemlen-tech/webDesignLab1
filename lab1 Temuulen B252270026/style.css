@@ -8,18 +8,18 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f6f9;
-    color: #333333;
+    background-color: #f9f8f6; /* Дулаан саарал туяатай ар тал */
+    color: #332d29;
     line-height: 1.6;
     padding-bottom: 40px;
 }
 
-#head{
-    color:white;
+#head {
+    color: white;
 }
 
 header {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    background: linear-gradient(135deg, #271b10 0%, #9e8576 100%);
     color: #ffffff;
     padding: 20px 10%;
     display: flex;
@@ -69,22 +69,22 @@ section {
 }
 
 h1, h2, h3 {
-    color: #1a252f;
+    color: #271b10; /* Header-ийн үндсэн хүрэн өнгөтэй зохицуулав */
     margin-top: 20px;
     margin-bottom: 12px;
 }
 
 h1 {
     font-size: 1.8rem;
-    border-bottom: 2px solid #3498db;
+    border-bottom: 2px solid #8c6d58; /* Цэнхэр өнгийг зөөлөн хүрэн болгов */
     padding-bottom: 8px;
 }
 
 h2 {
     font-size: 1.3rem;
-    border-left: 4px solid #3498db;
+    border-left: 4px solid #8c6d58;
     padding-left: 10px;
-    background-color: #eef7fc;
+    background-color: #f5efe9; /* Зөөлөн беж дэвсгэр */
     padding-top: 6px;
     padding-bottom: 6px;
     border-radius: 0 6px 6px 0;
@@ -95,12 +95,13 @@ h3 {
     font-weight: 600;
 }
 
+/* Зөөлөн чидун ногоон ба терракота улаан өнгө */
 .title-blue {
-    color: #27ae60;
+    color: #5b7052;
 }
 
 .title-red {
-    color: #e74c3c;
+    color: #b85d43;
 }
 
 #img, .profile-img {
@@ -115,10 +116,10 @@ h3 {
 }
 
 .form-card {
-    background-color: #f8f9fa;
+    background-color: #fbf9f7;
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid #e9ecef;
+    border: 1px solid #eee8e2;
 }
 
 .form-group {
@@ -127,7 +128,7 @@ h3 {
 
 label {
     font-weight: 500;
-    color: #495057;
+    color: #4a423d;
     display: inline-block;
     margin-bottom: 5px;
 }
@@ -139,7 +140,7 @@ input[type="tel"],
 input[type="datetime-local"] {
     width: 100%;
     padding: 10px 12px;
-    border: 1px solid #ced4da;
+    border: 1px solid #d1c7bd;
     border-radius: 6px;
     font-size: 1rem;
 }
@@ -149,9 +150,9 @@ input[type="email"]:focus,
 input[type="password"]:focus,
 input[type="tel"]:focus,
 input[type="datetime-local"]:focus {
-    border-color: #3498db;
+    border-color: #8c6d58;
     outline: none;
-    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+    box-shadow: 0 0 5px rgba(140, 109, 88, 0.3);
 }
 
 .radio-group {
@@ -189,24 +190,24 @@ table {
 th, td {
     padding: 12px 15px;
     text-align: center;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #e0d9d2;
 }
 
 th {
-    background-color: #3498db;
+    background-color: #8c6d58; /* Хүснэгтийн толгойг зөөлөн хүрэн болгов */
     color: #ffffff;
     font-weight: 600;
 }
 
 tr:nth-child(even) {
-    background-color: #f8f9fa;
+    background-color: #fbf9f7;
 }
 
 footer {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
-    background-color: #1e3c72;
+    background-color: #271b10; /* Header-ийн бараан хүрэн өнгөтэй адилхан болгов */
     color: #ffffff;
     font-size: 0.9rem;
 }
