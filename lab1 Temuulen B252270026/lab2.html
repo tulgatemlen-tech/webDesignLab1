@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Лаборатори 02: Хэрэглэгчийн анкет</title> 
+    <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+
+  <header> 
+    <h1 id="head">Оюутны Бүртгэлийн Портал</h1> 
+    <nav class="navbar"> 
+      <ul> 
+        <li><a href="index.html">Нүүр</a></li> 
+        <li><a href="lab2.html">Анкет засах</a></li> 
+        <li><a href="#">Тусламж</a></li> 
+      </ul> 
+    </nav> 
+  </header> 
+  
+  <main> 
+    <article> 
+      <section> 
+        <h2>Хэрэглэгчийн Анкет Бөглөх</h2> 
+        <p>Доорх формын дагуу мэдээллээ бүрэн, үнэн зөв зааж бөглөнө үү.</p> 
+  
+        <form class="form-card">
+          <div class="form-group">
+            <label for="fname">Овог нэр:</label>
+            <input type="text" id="fname" name="fname">
+          </div>
+
+          <div class="form-group">
+            <label for="lname">Нэр:</label>
+            <input type="text" id="lname" name="lname">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Утасны дугаар:</label>
+            <input type="tel" id="phone" name="phone" placeholder="9911-2233">
+          </div>
+
+          <div class="form-group">
+            <label for="birthdaytime">Төрсөн он сар өдөр:</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+          </div>
+
+          <div class="form-group">
+            <label>Хүйс:</label>
+            <div class="radio-group">
+              <input type="radio" id="em" name="gender" value="Эм">
+              <label for="em">Эм</label>
+              <input type="radio" id="er" name="gender" value="Эр">
+              <label for="er">Эр</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Багаар ажиллах чадвар:</label>
+            <div class="radio-group">
+              <input type="radio" id="sain" name="skill" value="Сайн">
+              <label for="sain">Сайн</label>
+              <input type="radio" id="dund" name="skill" value="Дунд зэрэг">
+              <label for="dund">Дунд зэрэг</label>
+              <input type="radio" id="muu" name="skill" value="Муу">
+              <label for="muu">Муу</label>
+            </div>
+          </div>
+        </form>
+      </section> 
+
+      <section> 
+        <h2>Миний сонирхол</h2> 
+        <ul> 
+          <li>Веб хөгжүүлэлт</li> 
+          <li>Фото зураг авах</li> 
+          <li>Кино үзэх</li> 
+        </ul> 
+      </section> 
+  
+      <section> 
+        <h2>Миний дүн</h2> 
+        <table>
+            <thead>
+                <tr> 
+                  <th>Хичээл</th> 
+                  <th>Веб зохиомж</th> 
+                  <th>Мэдээллийн сан</th> 
+                  <th>Алгоритм</th> 
+                </tr> 
+            </thead>
+            <tbody>
+                <tr> 
+                  <td>Дүн</td> 
+                  <td>95</td> 
+                  <td>88</td> 
+                  <td>92</td> 
+                </tr> 
+            </tbody>
+        </table> 
+      </section> 
+    </article> 
+  </main> 
+  
+  <footer> 
+    <p>&copy; 2026 Веб зохиомж хичээл. Бүх эрх хуулиар хамгаалагдсан.</p> 
+  </footer> 
+
+</body> 
+</html>

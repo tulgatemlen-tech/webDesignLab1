@@ -1,78 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Миний мэдээлэл</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Нэр: Т.Тэмүүлэн</h1>
-    <img src="zurag.jpg" height="400">
-    <h1 style="background-color: rgb(16, 130, 223);">Zorilgo:</h1>
-    <p>Surguulia amjilttai tugsuj , game development cigleller ywna</p>
-    <p>Minii biy 2025 ond shutis d programm hangamjiin engineerclel hutulburuur elsen suraltssan , Odoo 2r kursiin oyutan , tsaashdaa usun dewjin suraltsah huseltei 
-    </p>
-    <h1 style="background-color: rgb(16, 130, 223);"
-    <h2 style="background-color: yellow;">Ezemshsen chadwaruud:</h2>
-    <ul>
-        <li>C/C++ coding language(beginner)</li>
-        <li>Python coding language(beginner)</li>
-        <li>Java coding language(beginner)</li>
-    </ul>
-    <h2 style="background-color: yellow;">Huwi hun talaas:</h2>
-    <h3>-Ger bul:</h3>
-    <ul>
-        <li>am bul = 6</li>
-        <li>ailiin tom(3 ohin duutei)</li>
-        <li>emee uwuu deeree ussun</li>
-    </ul>
-    <h3>-Hobby:</h3>
-    <ul>
-        <li>chess</li>
-        <li>sagsan bumbug</li>
-        <li>video games</li>
-        <li>zurag zurah</li>
-    </ul>
-    <h3 style="color:blue">-Dawuu tal:</h3>
-    <ol>
-        <li>ger buliin humuujil sain</li>
-        <li>yumiig hurdan surdag</li>
-        <li>yumand ih hariutslagati handdag</li>
-        <li>hort zurshilgui</li>
-        <li>yumiig hamgiin sainara hiihiig ermelzdeg</li>
-    </ol>
-    <h3 style="color:red">-Sul tal:</h3>
-    <ol>
-        <li>huntei hariltsah chadwar taaruu</li>
-        <li>haayaa jaahan zalhuu</li>
-        <li>social hereglee ih</li>
-    </ol>
-    <h2 style="background-color: yellow;">Hiceeliin huwaari</h2>
-    <table bgcolor="black">
-        <tr bgcolor="yellow">
-            <th>1 deh udur</th>
-            <th>2 dah udur</th>
-            <th>3 dah udur</th>
-            <th>4 deh udur</th>
-            <th>5 dah udur</th>
-            <th>6 dah udur</th>
-            <th>7 dah udur</th>
-        </tr>
-        <tr bgcolor="white">
-            <td>amarna</td>
-            <td>hiceeltei</td>
-            <td>hiceeltei</td>
-            <td>hiceeltei</td>
-            <td>amarna</td>
-            <td>amarna</td>
-            <td>amarna</td>
-        </tr>
-    </table>
-    <h2 style="background-color: yellow;">Holboo barih</h2>
-    <ol>
-        <li>Utas = 95913068</li>
-        <li>Gmail = tulgatemlen@gmail.com</li>
-        <li>instagram , facebook geh met</li>
-    </ol>
+    <header> 
+        <h1 id="head">Оюутны Бүртгэлийн Портал</h1> 
+        <nav class="navbar"> 
+            <ul> 
+                <li><a href="index.html">Нүүр</a></li> 
+                <li><a href="lab2.html">Анкет засах</a></li> 
+                <li><a href="#">Тусламж</a></li> 
+            </ul> 
+        </nav> 
+    </header>
+
+    <main>
+        <h1>Нэр: Т.Тэмүүлэн</h1>
+        <img id="img" src="zurag.jpg" alt="Тэмүүлэнгийн зураг">
+
+        <h2>Зорилго:</h2>
+        <p>Сургуулиа амжилттай төгсөж, game development чиглэлээр явна.</p>
+        <p>Миний бие 2025 онд ШУТИС-д програм хангамжийн инженерчлэл хөтөлбөрөөр элсэн суралцсан, Одоо 2-р курсын оюутан, цаашдаа өсөн дэвжин суралцах хүсэлтэй.</p>
+
+        <h2>Эзэмшсэн чадварууд:</h2>
+        <ul>
+            <li>C/C++ coding language (beginner)</li>
+            <li>Python coding language (beginner)</li>
+            <li>Java coding language (beginner)</li>
+        </ul>
+
+        <h2>Хувь хүн талаас:</h2>
+        <h3>-Гэр бүл:</h3>
+        <ul>
+            <li>ам бүл = 6</li>
+            <li>айлын том (3 охин дүүтэй)</li>
+            <li>эмээ өвөө дээрээ өссөн</li>
+        </ul>
+
+        <h3>-Хобби:</h3>
+        <ul>
+            <li>шатар</li>
+            <li>сагсан бөмбөг</li>
+            <li>видео тоглоом</li>
+            <li>зураг зурах</li>
+        </ul>
+
+        <h3 class="title-blue">-Давуу тал:</h3>
+        <ol>
+            <li>гэр бүлийн хүмүүжил сайн</li>
+            <li>юмыг хурдан сурдаг</li>
+            <li>юманд их хариуцлагатай ханддаг</li>
+            <li>хорт зуршилгүй</li>
+            <li>юмыг хамгийн сайнаараа хийхийг эрмэлздэг</li>
+        </ol>
+
+        <h3 class="title-red">-Сөрөг тал:</h3>
+        <ol>
+            <li>хүнтэй харилцах чадвар тааруу</li>
+            <li>хааяа жаахан залхуу</li>
+            <li>сошиал хэрэглээ их</li>
+        </ol>
+
+        <h2>Хичээлийн хуваарь</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>1 дэх өдөр</th>
+                    <th>2 дахь өдөр</th>
+                    <th>3 дахь өдөр</th>
+                    <th>4 дэх өдөр</th>
+                    <th>5 дахь өдөр</th>
+                    <th>6 дахь өдөр</th>
+                    <th>7 дахь өдөр</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>амарна</td>
+                    <td>хичээлтэй</td>
+                    <td>хичээлтэй</td>
+                    <td>хичээлтэй</td>
+                    <td>амарна</td>
+                    <td>амарна</td>
+                    <td>амарна</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Холбоо барих</h2>
+        <ol>
+            <li>Утас = 95913068</li>
+            <li>Gmail = tulgatemlen@gmail.com</li>
+            <li>Instagram, Facebook гэх мэт</li>
+        </ol>
+    </main>
+
+    <footer> 
+        <p>&copy; 2026 Веб зохиомж хичээл. Бүх эрх хуулиар хамгаалагдсан.</p> 
+    </footer>
 </body>
 </html>
