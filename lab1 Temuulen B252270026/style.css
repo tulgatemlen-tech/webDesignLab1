@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f9f8f6; /* Дулаан саарал туяатай ар тал */
+    background-color: #f9f8f6; 
     color: #332d29;
     line-height: 1.6;
     padding-bottom: 40px;
@@ -69,14 +69,14 @@ section {
 }
 
 h1, h2, h3 {
-    color: #271b10; /* Header-ийн үндсэн хүрэн өнгөтэй зохицуулав */
+    color: #271b10; 
     margin-top: 20px;
     margin-bottom: 12px;
 }
 
 h1 {
     font-size: 1.8rem;
-    border-bottom: 2px solid #8c6d58; /* Цэнхэр өнгийг зөөлөн хүрэн болгов */
+    border-bottom: 2px solid #8c6d58; 
     padding-bottom: 8px;
 }
 
@@ -84,7 +84,7 @@ h2 {
     font-size: 1.3rem;
     border-left: 4px solid #8c6d58;
     padding-left: 10px;
-    background-color: #f5efe9; /* Зөөлөн беж дэвсгэр */
+    background-color: #f5efe9; 
     padding-top: 6px;
     padding-bottom: 6px;
     border-radius: 0 6px 6px 0;
@@ -95,7 +95,6 @@ h3 {
     font-weight: 600;
 }
 
-/* Зөөлөн чидун ногоон ба терракота улаан өнгө */
 .title-blue {
     color: #5b7052;
 }
@@ -194,7 +193,7 @@ th, td {
 }
 
 th {
-    background-color: #8c6d58; /* Хүснэгтийн толгойг зөөлөн хүрэн болгов */
+    background-color: #8c6d58; 
     color: #ffffff;
     font-weight: 600;
 }
@@ -207,7 +206,7 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
-    background-color: #271b10; /* Header-ийн бараан хүрэн өнгөтэй адилхан болгов */
+    background-color: #271b10;
     color: #ffffff;
     font-size: 0.9rem;
 }
