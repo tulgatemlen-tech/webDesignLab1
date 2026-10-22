@@ -13,7 +13,6 @@
 </head>
 <body>
 
-    <!-- Семантик Header & Навигаци (Flexbox) -->
     <header class="site-header">
         <div class="logo">
             <span>✨ English Spark</span>
@@ -28,20 +27,16 @@
         </nav>
     </header>
 
-    <!-- Үндсэн агуулгын хэсэг -->
     <div class="layout-container">
-        
-        <!-- Үндсэн агуулга (Main Content) -->
+
         <main class="main-content">
             <section class="hero-section">
                 <h1>Англи хэлийг хялбар бөгөөд үр дүнтэй сур</h1>
                 <p>Үгсийн сангаа тэлж, граммарын дүрмийг эзэмшин, интерактив тестээр мэдлэгээ шалгаарай.</p>
             </section>
 
-            <!-- CSS Grid ашигласан 3 багат хэсэг -->
             <section id="courses" class="courses-grid">
-                
-                <!-- Карт 1 -->
+
                 <article class="course-card">
                     <span class="badge badge-popular">Эрэлттэй</span>
                     <div class="card-icon">🗣️</div>
@@ -50,7 +45,6 @@
                     <button class="btn-card">Эхлэх</button>
                 </article>
 
-                <!-- Карт 2 -->
                 <article class="course-card">
                     <span class="badge badge-new">Шинэ</span>
                     <div class="card-icon">📚</div>
@@ -70,40 +64,34 @@
 
             </section>
 
-            <!-- Семантик Бүртгэлийн Форм Хэсэг -->
             <section id="register" class="form-section">
                 <h2>Суралцагчийн бүртгэл үүсгэх</h2>
                 <p class="form-subtext">Мэдлэгээ дээшлүүлж буй 10,000+ суралцагчидтай нэгдээрэй.</p>
 
                 <form class="registration-form" action="#" method="POST">
-                    
-                    <!-- 1. Нэр (Text Input & Tooltip) -->
+
                     <div class="form-group tooltip-container">
                         <label for="fullname">Бүтэн нэр</label>
                         <input type="text" id="fullname" name="fullname" placeholder="Баатарын Болд" required pattern="[A-Za-zА-Яа-яӨөҮү\s]{3,}" title="Дор хаяж 3 үсэгтэй нэр оруулна уу">
                         <span class="tooltip">Бүтэн овог нэрээ оруулна уу.</span>
                     </div>
 
-                    <!-- 2. Имэйл (Email Input) -->
                     <div class="form-group">
                         <label for="email">Имэйл хаяг</label>
                         <input type="email" id="email" name="email" placeholder="example@domain.mn" required>
                     </div>
 
-                    <!-- 3. Нууц үг (Password Input with Pattern) -->
                     <div class="form-group tooltip-container">
                         <label for="password">Нууц үг</label>
                         <input type="password" id="password" name="password" placeholder="••••••••" required pattern=".{8,}" title="Нууц үг дор хаяж 8 тэмдэгттэй байх ёстой">
                         <span class="tooltip">Дор хаяж 8 тэмдэгт.</span>
                     </div>
 
-                    <!-- 4. Төрсөн огноо (Date Input) -->
                     <div class="form-group">
                         <label for="dob">Төрсөн огноо</label>
                         <input type="date" id="dob" name="dob" required>
                     </div>
 
-                    <!-- 5. Түвшин сонгох (Select Dropdown) -->
                     <div class="form-group">
                         <label for="level">Англи хэлний одоогийн түвшин</label>
                         <select id="level" name="level" required>
@@ -114,7 +102,6 @@
                         </select>
                     </div>
 
-                    <!-- 6. Хүйс сонгох (Radio Buttons) -->
                     <div class="form-group">
                         <label>Хүйс</label>
                         <div class="radio-group">
@@ -130,7 +117,6 @@
                         </div>
                     </div>
 
-                    <!-- 7. Сонирхол (Checkboxes) -->
                     <div class="form-group">
                         <label>Сурах зорилго (Харгалзах хэсгийг сонгоно уу)</label>
                         <div class="checkbox-group">
@@ -146,13 +132,11 @@
                         </div>
                     </div>
 
-                    <!-- Илгээх товч -->
                     <button type="submit" class="btn-submit">Бүртгүүлэх</button>
                 </form>
             </section>
         </main>
 
-        <!-- Хажуугийн цэс (Sidebar) -->
         <aside class="sidebar">
             <div class="sidebar-widget">
                 <h3>💡 Өдрийн шинэ үг</h3>
@@ -175,7 +159,6 @@
 
     </div>
 
-    <!-- Семантик Footer -->
     <footer class="site-footer">
         <div class="footer-content">
             <p>&copy; 2026 English Spark. HTML5, Flexbox, & CSS Grid ашиглан хийв.</p>
