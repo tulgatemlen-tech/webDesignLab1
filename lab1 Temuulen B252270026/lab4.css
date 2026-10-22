@@ -1,0 +1,381 @@
+/* ==========================================
+   1. ҮНДСЭН ТОХИРУУЛГА & RESET
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f172a; /* Хөх саарал дэвсгэр */
+    color: #f8fafc;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Outfit', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ==========================================
+   2. HEADER БОЛОН НАВИГАЦИ (Flexbox)
+   ========================================== */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 5%;
+    background-color: #1e293b;
+    border-bottom: 1px solid #334155;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #38bdf8;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Flexbox шинж чанар: Элемент хоорондын зай */
+}
+
+.nav-link {
+    color: #94a3b8;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #38bdf8;
+}
+
+.btn-nav {
+    background-color: #0284c7;
+    color: #ffffff !important;
+    padding: 0.5rem 1.25rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-nav:hover {
+    background-color: #0369a1;
+}
+
+/* ==========================================
+   3. ҮНДСЭН ЭХ БЭЛТГЭЛ БОЛОН CSS GRID
+   ========================================== */
+.layout-container {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.main-content {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Hero Хэсэг */
+.hero-section {
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid #334155;
+}
+
+.hero-section h1 {
+    font-size: 2.2rem;
+    color: #f1f5f9;
+    margin-bottom: 0.5rem;
+}
+
+.hero-section p {
+    color: #94a3b8;
+}
+
+/* Картнуудын хэсэг (CSS Grid) */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* 3+ баганатай Грид */
+    gap: 1.5rem; /* CSS Grid Зай */
+}
+
+/* Карт элемент (Box Model & Position Relative) */
+.course-card {
+    position: relative; /* Тэмдэгтүүд (badge)-ийг absolute байрлуулахад ашиглагдана */
+    background-color: #1e293b;
+    padding: 1.75rem 1.25rem;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+.card-icon {
+    font-size: 2.5rem;
+}
+
+.course-card h2 {
+    font-size: 1.25rem;
+    color: #f8fafc;
+}
+
+.course-card p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    flex-grow: 1;
+}
+
+.btn-card {
+    margin-top: 1rem;
+    background-color: transparent;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+    padding: 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-card:hover {
+    background-color: #38bdf8;
+    color: #0f172a;
+}
+
+/*Badge / Онцлох тэмдэг (Position Absolute) */
+.badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.6rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.badge-popular { background-color: rgba(245, 158, 11, 0.2); color: #fbbf24; }
+.badge-new { background-color: rgba(16, 185, 129, 0.2); color: #34d399; }
+.badge-advanced { background-color: rgba(168, 85, 247, 0.2); color: #c084fc; }
+
+/* ==========================================
+   4. ФОРМЫН ДИЗАЙН (Box Model & Validation)
+   ========================================== */
+.form-section {
+    background-color: #1e293b;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #334155;
+}
+
+.form-section h2 {
+    color: #f8fafc;
+    margin-bottom: 0.25rem;
+}
+
+.form-subtext {
+    color: #94a3b8;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #cbd5e1;
+}
+
+/* Формын оролтын талбарын Box Model */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    color: #f8fafc;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    border-color: #38bdf8;
+}
+
+/* Radio & Checkbox хэсэг */
+.radio-group,
+.checkbox-group {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.25rem;
+}
+
+.radio-label,
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+/* Tooltip дизайн (Position Relative/Absolute) */
+.tooltip-container {
+    position: relative;
+}
+
+.tooltip {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    top: -25px;
+    background-color: #0284c7;
+    color: #ffffff;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.tooltip-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Илгээх товчлуур */
+.btn-submit {
+    margin-top: 1rem;
+    padding: 0.85rem;
+    background-color: #0284c7;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #0369a1;
+}
+
+/* ==========================================
+   5. SIDEBAR WIDGET СТАЙЛ
+   ========================================== */
+.sidebar-widget {
+    background-color: #1e293b;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #334155;
+}
+
+.sidebar-widget h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #38bdf8;
+}
+
+.word-card .word {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.word-card .phonetic {
+    display: block;
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 0.5rem;
+}
+
+.word-card .definition {
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+.stats-list li {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-bottom: 0.5rem;
+}
+
+/* ==========================================
+   6. FOOTER СТАЙЛ
+   ========================================== */
+.site-footer {
+    background-color: #1e293b;
+    border-top: 1px solid #334155;
+    padding: 1.5rem;
+    text-align: center;
+    color: #64748b;
+    font-size: 0.875rem;
+    margin-top: 3rem;
+}
+
+/* Эх бэлтгэлийг утас/мобилд зохицуулах хэсэг */
+@media (max-width: 768px) {
+    .layout-container {
+        flex-direction: column;
+    }
+    .site-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
