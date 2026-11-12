@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Spark - Responsive English Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lab5.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo">
+            <span>✨ English Spark</span>
+        </div>
+        
+        <button class="mobile-menu-btn" id="menuToggle" aria-label="Цэс нээх">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+            <ul class="nav-list">
+                <li><a href="#courses" class="nav-link active">Хичээлүүд</a></li>
+                <li><a href="#grammar" class="nav-link">Дүрэм</a></li>
+                <li><a href="#vocabulary" class="nav-link">Үгсийн сан</a></li>
+                <li><a href="#register" class="nav-link btn-nav">Бүртгүүлэх</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="layout-container">
+        
+        <main class="main-content">
+            <section class="hero-section">
+                <h1>Англи хэлийг хялбар бөгөөд үр дүнтэй сур</h1>
+                <p>Үгсийн сангаа тэлж, граммарын дүрмийг эзэмшин, интерактив тестээр мэдлэгээ шалгаарай.</p>
+            </section>
+
+            <section id="courses" class="courses-grid">
+                
+                <article class="course-card">
+                    <span class="badge badge-popular">Эрэлттэй</span>
+                    <div class="card-icon">🗣️</div>
+                    <h2>Өдөр тутмын яриа</h2>
+                    <p>Түгээмэл хэрэглэгддэг 500+ өдөр тутмын хэллэг, идиом болон ярианы бүтцийг суралцаарай.</p>
+                    <button class="btn-card">Эхлэх</button>
+                </article>
+
+                <article class="course-card">
+                    <span class="badge badge-new">Шинэ</span>
+                    <div class="card-icon">📚</div>
+                    <h2>Үндсэн Граммар</h2>
+                    <p>Англи хэлний цагууд, артикль болон өгүүлбэрийн бүтцийг хялбар жишээн дээр сур.</p>
+                    <button class="btn-card">Эхлэх</button>
+                </article>
+
+                <article class="course-card">
+                    <span class="badge badge-advanced">Гүнзгий</span>
+                    <div class="card-icon">💼</div>
+                    <h2>Бизнес Англи хэл</h2>
+                    <p>Албан имэйл бичих, уулзалт хийх болон илтгэл тавих ур чадвараа дээшлүүл.</p>
+                    <button class="btn-card">Эхлэх</button>
+                </article>
+
+            </section>
+
+            <section id="register" class="form-section">
+                <h2>Суралцагчийн бүртгэл үүсгэх</h2>
+                <p class="form-subtext">Мэдлэгээ дээшлүүлж буй 10,000+ суралцагчидтай нэгдээрэй.</p>
+
+                <form class="registration-form" action="#" method="POST">
+                    
+                    <div class="form-group tooltip-container">
+                        <label for="fullname">Бүтэн нэр</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Баатарын Болд" required pattern="[A-Za-zА-Яа-яӨөҮү\s]{3,}">
+                        <span class="tooltip">Бүтэн овог нэрээ оруулна уу.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Имэйл хаяг</label>
+                        <input type="email" id="email" name="email" placeholder="example@domain.mn" required>
+                    </div>
+
+                    <div class="form-group tooltip-container">
+                        <label for="password">Нууц үг</label>
+                        <input type="password" id="password" name="password" placeholder="••••••••" required pattern=".{8,}">
+                        <span class="tooltip">Дор хаяж 8 тэмдэгт.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Төрсөн огноо</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="level">Англи хэлний одоогийн түвшин</label>
+                        <select id="level" name="level" required>
+                            <option value="" disabled selected>Түвшнээ сонгоно уу</option>
+                            <option value="beginner">Анхан шат (A1-A2)</option>
+                            <option value="intermediate">Дунд шат (B1-B2)</option>
+                            <option value="advanced">Гүнзгий шат (C1-C2)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Хүйс</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="male" required> Эрэгтэй
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="female"> Эмэгтэй
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="other"> Бусад
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Сурах зорилго</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="speaking"> Ярианы чадвар
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="grammar"> Граммар / Дүрэм
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="ielts"> IELTS / TOEFL
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Бүртгүүлэх</button>
+                </form>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3>💡 Өдрийн шинэ үг</h3>
+                <div class="word-card">
+                    <span class="word">Perseverance</span>
+                    <span class="phonetic">/ˌpɜː.sɪˈvɪə.rəns/</span>
+                    <p class="definition">Шулуудсан зорилгодоо хэцүү саад бэрхшээлийг үл харгалзан тууштай тэмүүлэх чанар.</p>
+                </div>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3>📊 Статистик</h3>
+                <ul class="stats-list">
+                    <li><strong>Нийт суралцагчид:</strong> 12,450</li>
+                    <li><strong>Үзсэн хичээлүүд:</strong> 85,200</li>
+                    <li><strong>Үнэлгээ:</strong> ⭐ 4.9/5</li>
+                </ul>
+            </div>
+        </aside>
+
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 English Spark. Responsive & Mobile-First Design.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const mainNav = document.getElementById('mainNav');
+
+        menuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

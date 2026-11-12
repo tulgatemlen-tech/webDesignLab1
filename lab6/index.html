@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Монголоор аялъя | Лаб 6</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="#top">Монголоор аялъя</a>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">☰ Цэс</button>
+  <nav id="nav" class="nav" aria-label="Үндсэн цэс">
+    <a href="#gallery">Газрууд</a>
+    <a href="#price">Үнэ бодох</a>
+    <a href="#video">Бичлэг</a>
+    <a href="#map">Газрын зураг</a>
+    <button class="theme-btn" id="themeBtn" aria-label="Харанхуй горим солих">◐</button>
+  </nav>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-text">
+    <h1>Тал нутгаас говь хүртэл</h1>
+    <p>Монголын хамгийн сайхан арван хоёр газар. Зураг дээр дарж эргүүлбэл үнийн мэдээлэл гарна.</p>
+    <a class="btn" href="#gallery">Газруудыг үзэх</a>
+  </div>
+</section>
+
+<div class="layout">
+  <main>
+    <section id="gallery">
+      <h2>Алдартай газрууд</h2>
+      <div class="filters" role="group" aria-label="Төрлөөр шүүх">
+        <button aria-pressed="true" data-f="all">Бүгд</button>
+        <button aria-pressed="false" data-f="lake">Нуур</button>
+        <button aria-pressed="false" data-f="gobi">Говь</button>
+        <button aria-pressed="false" data-f="mount">Уул, ой</button>
+        <button aria-pressed="false" data-f="history">Түүх</button>
+      </div>
+      <div class="gallery" id="grid"></div>
+    </section>
+
+    <section id="price">
+      <div class="calc">
+        <h2>Аяллын үнэ бодох</h2>
+        <p class="note">Жишээ үнэ бөгөөд бодит үнэ биш.</p>
+        <div class="row">
+          <label>Газар<select id="dest"></select></label>
+          <label>Хоногийн тоо<input id="days" type="number" min="1" max="30" value="3"></label>
+          <label>Хүний тоо<input id="ppl" type="number" min="1" max="20" value="2"></label>
+        </div>
+        <div class="total" id="total" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="video">
+      <h2>Аяллын бичлэг</h2>
+      <video controls preload="metadata" poster="img/photo1.jpg">
+        <source src="video/video.mp4" type="video/mp4">
+        <track kind="subtitles" src="video/clip.mn.vtt" srclang="mn" label="Монгол" default>
+        Таны хөтөч видеог дэмжихгүй байна.
+      </video>
+    </section>
+
+    <section id="map">
+      <h2>Газрын зураг</h2>
+      <div class="frame">
+        <iframe title="Монгол улсын газрын зураг" loading="lazy"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=87%2C41%2C120%2C52&amp;layer=mapnik"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <aside class="sidebar" aria-label="Нэмэлт мэдээлэл">
+    <h2>Аяллын зөвлөгөө</h2>
+    <ul>
+      <li>Зун (6–8 сар) хамгийн тохиромжтой.</li>
+      <li>Говьд ус, нарны тос заавал авч яваарай.</li>
+      <li>Хөвсгөлд орой хүйтэн тул дулаан хувцас хэрэгтэй.</li>
+      <li>Үнэ нь жишээ тоо. Аяллын компаниас лавлаарай.</li>
+    </ul>
+  </aside>
+</div>
+
+<footer class="site-footer">
+  <p>© 2026 Монголоор аялъя. Лабораторийн ажил №6.</p>
+</footer>
+</body>
+</html>
